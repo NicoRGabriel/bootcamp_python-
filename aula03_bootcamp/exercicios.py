@@ -2,57 +2,70 @@
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 
-numero_01 = int(input("insira um número: "))
-numero_02 = int(input("insira outro número: "))
+# numero_01 = int(input("insira um número: "))
+# numero_02 = int(input("insira outro número: "))
 
-valor_total = numero_01 + numero_02
+# valor_total = numero_01 + numero_02
 
-print(f"o valor somado é igual a {valor_total}")
+# print(f"o valor somado é igual a {valor_total}")
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 
-usuario = int(input("digite um numero: "))
-cauculo_divisao = usuario % 5
+# usuario = int(input("digite um numero: "))
+# cauculo_divisao = usuario % 5
 
-print(f" o resto da divisao do numero {usuario} divido por 5 é = {cauculo_divisao}")
+# print(f" o resto da divisao do numero {usuario} divido por 5 é = {cauculo_divisao}")
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 
-numero_01 = int(input("insira um número: "))
-numero_02 = int(input("insira outro número: "))
-valor_total = numero_01 * numero_02
+# numero_01 = int(input("insira um número: "))
+# numero_02 = int(input("insira outro número: "))
+# valor_total = numero_01 * numero_02
 
-print(f"o valor multiplicado é igual a {valor_total}")
+# print(f"o valor multiplicado é igual a {valor_total}")
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
-numero_01 = int(input("insira um número: "))
-numero_02 = int(input("insira outro número: "))
-cauculo_divisao_interira = numero_01 // numero_02
+# numero_01 = int(input("insira um número: "))
+# numero_02 = int(input("insira outro número: "))
+# cauculo_divisao_interira = numero_01 // numero_02
 
-print(f"a divisao inteira de {numero_01} por {numero_02} é = {cauculo_divisao_interira}")
+# print(f"a divisao inteira de {numero_01} por {numero_02} é = {cauculo_divisao_interira}")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
-numero_01 = int(input("insira um número: "))
-resultado = numero_01 ** 2
+# numero_01 = int(input("insira um número: "))
+# resultado = numero_01 ** 2
 
-print(f"o quadrado do número {numero_01} é = {resultado}")
+# print(f"o quadrado do número {numero_01} é = {resultado}")
 
 # #### Números de Ponto Flutuante (`float`)
 
 import math
 
-# 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
-# 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-# 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-# 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-# 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+# # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
 
-raio_do_circulo = float(input("Digite o raio: "))
-area_do_circulo = math.pi * raio_do_circulo ** 2
+# numero_01 = float(input("Digite o primeiro numero: "))
+# numero_02 = float(input("Digite o segundo numero:"))
+# resultado = numero_01 + numero_02
 
-print(f"{area_do_circulo:.2f}")
+# print(resultado)
+
+# # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+
+# numero_01 = float(input("Digite um numero: "))
+# numero_02 = float(input("Digite outro numero: "))
+# media = (numero_01 + numero_02) / 2
+
+# print(media)
+# # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+# # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+# # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+
+# raio_do_circulo = float(input("Digite o raio: "))
+# area_do_circulo = math.pi * raio_do_circulo ** 2
+
+# print(f"{area_do_circulo:.2f}")
 
 
 # #### Strings (`str`) 

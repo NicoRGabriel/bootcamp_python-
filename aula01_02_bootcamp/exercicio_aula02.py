@@ -6,9 +6,9 @@
 
 
 
-# # verificar tipo de variavel
-# numero = int(input("Digite um número: "))
-# if isinstance(numero, int):
-#     print("A variável é um inteiro.")
-# else:
-#     print("A variável não é um inteiro.")
+# verificar tipo de variavel
+numero = int(input("Digite um número: "))
+if isinstance(numero, int):
+    print("A variável é um inteiro.")
+else:
+    print("A variável não é um inteiro.")
