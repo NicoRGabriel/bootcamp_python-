@@ -1,6 +1,19 @@
-# Exercício 21: Conversor de Temperatura
+# Type Error
 
-# Escreva um programa que converta a temperatura de Celsius para Fahrenheit. O programa deve solicitar ao usuário a temperatura
-# em Celsius e, utilizando try-except, garantir que a entrada seja numérica, tratando qualquer ValueError. 
-# Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida.
+# try:
+#     numero_01 = int(input("insira um número: "))
+#     numero_02 = int(input("insira outro número: "))
+#     resultado = numero_01 // numero_02
+#     print(resultado)
+# except:
+#     print("integer divicion or modulo by zero")
 
+
+try:
+    numero = int(input("insira um numero:"))
+    if isinstance(numero, int):
+        print("a variavel é um inteiro")
+    else:
+        print("a variavel não é um inteiro")
+except:
+    print("invalid literal for int() with base 10")
