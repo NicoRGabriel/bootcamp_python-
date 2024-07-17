@@ -57,7 +57,11 @@ import math
 
 # print(media)
 # # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+
+
 # # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+
 # # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 # raio_do_circulo = float(input("Digite o raio: "))

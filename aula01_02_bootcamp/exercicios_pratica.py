@@ -1,12 +1,12 @@
 # Type Error
 
-# try:
-#     numero_01 = int(input("insira um número: "))
-#     numero_02 = int(input("insira outro número: "))
-#     resultado = numero_01 // numero_02
-#     print(resultado)
-# except:
-#     print("integer divicion or modulo by zero")
+try:
+    numero_01 = int(input("insira um número: "))
+    numero_02 = int(input("insira outro número: "))
+    resultado = numero_01 // numero_02
+    print(resultado)
+except:
+    print("integer divicion or modulo by zero")
 
 
 try:
