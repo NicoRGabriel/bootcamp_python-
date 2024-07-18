@@ -5,13 +5,13 @@
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
 
-quantidade = float(input("Digite a quantidade: "))
-preco = float(input("Digite o preco: "))
+# quantidade = float(input("Digite a quantidade: "))
+# preco = float(input("Digite o preco: "))
 
-if quantidade > 0 and preco > 0:
-    print("Dados válidos")
-else:
-    print("Dados inválidos")
+# if quantidade > 0 and preco > 0:
+#     print("Dados válidos")
+# else:
+#     print("Dados inválidos")
 
 
 ### Exercício 2: Classificação de Dados de Sensor
@@ -23,7 +23,7 @@ else:
 # Temperatura >= 18°C e <= 26°C é 'Normal'
 # Temperatura > 26°C é 'Alta'
 
-sensor_temperatura = float(input("Temperatura está: "))
+# sensor_temperatura = float(input("Temperatura está: "))
 
 if sensor_temperatura < 18:
     print("Temperatura Baixa")
@@ -37,6 +37,12 @@ else:
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário 
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+if log["level"] == 'ERROR':
+    print(log["message"])
+
 
 ### Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação, 
