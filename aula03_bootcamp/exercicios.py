@@ -69,35 +69,101 @@
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
 
-transacao = {'valor': 12000, 'hora': 20}
+# transacao = {'valor': 12000, 'hora': 20}
 
-if transacao['valor'] >= 10000 or transacao['hora'] < 9 or transacao['hora'] > 18:
-    print("Transação suspeita")
-else:
-    print('Transação normal')
+# if transacao['valor'] >= 10000 or transacao['hora'] < 9 or transacao['hora'] > 18:
+#     print("Transação suspeita")
+# else:
+#     print('Transação normal')
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
+# texto = "a raposa marrom salta sobre o cachorro marrom preguiçoso"
+# palavras = texto.split()
+# contagem_palavras = {}
+
+# for palavra in palavras:
+#     if palavra in contagem_palavras:
+#         contagem_palavras[palavra] += 1
+#     else:
+#         contagem_palavras[palavra] = 1
+
+# print(contagem_palavras)
+
+
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+# numeros = [10, 20, 30, 40, 50]
+# minimo = min(numeros)
+# maximo = max(numeros)
+# normalizados = [(x - minimo) / (maximo - minimo) for x in numeros]
+
+# print(normalizados)
 
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
 
+# usuarios = [
+#     {"nome": "Alice", "email": "alice@example.com"},
+#     {"nome": "Bob", "email": ""},
+#     {"nome": "Carol", "email": "carol@example.com"}
+# ]
+
+# usuarios_validos = [usuario for usuario in usuarios if usuario["email"]]
+
+# print(usuarios_validos)
+
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
 
+# numeros = range(1, 24)
+# numeros_pares = [n for n in numeros if n % 2 == 0]
+
+# print(numeros_pares)
+
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+
+# vendas = [
+#     {"categoria": "eletrônicos", "valor": 1200},
+#     {"categoria": "livros", "valor": 200},
+#     {"categoria": "eletrônicos", "valor": 800}
+# ]
+
+# total_por_categoria = {}
+# for venda in vendas:
+#     categoria = venda["categoria"]
+#     valor = venda["valor"]
+#     if categoria in total_por_categoria:
+#         total_por_categoria[categoria] += valor
+#     else:
+#         total_por_categoria[categoria] = valor
+
+# print(total_por_categoria)
 
 ### Exercícios com WHILE
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
+# dados = []
+# entrada = ""
+
+# while entrada.lower() != "sair":
+#     entrada = input("Digite um valor (ou 'sair' para terminar): ")
+# if entrada.lower() != "sair":
+#     print("finalizou")
+
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+
+# numero = int(input("Digite um número entre 1 e 10: "))
+# while numero <1 or numero >10:
+#     print("Número fora do range")
+#     numero = int(input("Por favor, digite um número entre 1 e 10: "))
+# print("Número válido")
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
@@ -106,4 +172,3 @@ else:
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
-# Processar itens de uma lista até encontrar um valor específico que indica a parada.
